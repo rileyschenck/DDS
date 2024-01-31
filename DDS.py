@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 
 st.title("Department of Developmental Services Purchase of Services Data 2022 - 2023")
 
-df = pd.read_csv("data/DDS_data/cleaned_data2.csv")
+df = pd.read_csv("cleaned_data2.csv")
 
 # Melt the DataFrame to make it suitable for analysis
 melted_df = pd.melt(df, id_vars=['Category', 'Regional Center', 'Title', 'Age Category'],
